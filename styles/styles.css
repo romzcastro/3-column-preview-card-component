@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --clr-primary-900: hsl(179, 100%, 13%);
+  --clr-primary-800: hsl(184, 100%, 22%);
+  --clr-primary-700: hsl(31, 77%, 52%);
+
+  --clr-secondary-200: hsla(0, 0%, 100%, 0.75);
+  --clr-secondary-100: hsl(0, 0%, 95%);
+
+  --clr-neutral-100: hsla(0, 0%, 100%, 0);
+
+  --ff-accent: "Big Shoulders Display", cursive;
+  --ff-base: "Lexend Deca", sans-serif;
+
+  --fw-bold: 700;
+  --fw-regular: 400;
+}
+body {
+  flex-direction: column;
+  background-color: var(--clr-secondary-100);
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+main {
+  margin: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 325px;
+  /* margin: 1rem 0 1rem 0; */
+}
+
+.SEDANS {
+  background-color: var(--clr-primary-700);
+  padding: 3rem;
+}
+.SEDANS img {
+  padding-bottom: 2.5rem;
+}
+.SEDANS h2 {
+  color: var(--clr-secondary-100);
+  font-family: var(--ff-accent);
+  font-size: 2.5rem;
+  font-weight: var(--fw-bold);
+  padding-bottom: 2.5rem;
+}
+.SEDANS p {
+  color: var(--clr-secondary-200);
+  padding-bottom: 1.8rem;
+  font-family: var(--ff-base);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-regular);
+}
+
+.SUVS {
+  background-color: var(--clr-primary-800);
+  padding: 3rem;
+}
+.SUVS img {
+  padding-bottom: 2.5rem;
+}
+.SUVS h2 {
+  color: var(--clr-secondary-100);
+  padding-bottom: 2.5rem;
+  font-family: var(--ff-accent);
+  font-size: 2.5rem;
+  font-weight: var(--fw-bold);
+}
+.SUVS p {
+  color: var(--clr-secondary-200);
+  padding-bottom: 1.8rem;
+  font-family: var(--ff-base);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-regular);
+}
+
+.LUXURY {
+  background-color: var(--clr-primary-900);
+  padding: 3rem;
+}
+.LUXURY img {
+  padding-bottom: 2.5rem;
+}
+.LUXURY h2 {
+  color: var(--clr-secondary-100);
+  padding-bottom: 2.5rem;
+  font-family: var(--ff-accent);
+  font-size: 2.5rem;
+  font-weight: var(--fw-bold);
+}
+.LUXURY p {
+  color: var(--clr-secondary-200);
+  padding-bottom: 1.8rem;
+  font-family: var(--ff-base);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-regular);
+}
+
+.SEDANS__button {
+  background-color: var(--clr-secondary-100);
+  border-radius: 2rem;
+  border: 2px solid var(--clr-secondary-100);
+  color: var(--clr-primary-700);
+  cursor: pointer;
+  font-family: var(--ff-base);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-regular);
+  padding: 1rem;
+  width: 8.75rem;
+}
+.SUVS__button {
+  background-color: var(--clr-secondary-100);
+  border-radius: 2rem;
+  border: 2px solid var(--clr-secondary-100);
+  color: var(--clr-primary-800);
+  cursor: pointer;
+  font-family: var(--ff-base);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-regular);
+  padding: 1rem;
+  width: 8.75rem;
+}
+.LUXURY__button {
+  background-color: var(--clr-secondary-100);
+  border-radius: 2rem;
+  border: 2px solid var(--clr-secondary-100);
+  color: var(--clr-primary-900);
+  cursor: pointer;
+  font-family: var(--ff-base);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-regular);
+  padding: 1rem;
+  width: 8.75rem;
+}
+
+footer {
+  margin-top: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    transition-duration: 0.3s;
+  }
+  button:hover {
+    border: 2px solid var(--clr-secondary-100);
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-secondary-100);
+    display: inline-block;
+  }
+}
